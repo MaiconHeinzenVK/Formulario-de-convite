@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Formulario de convite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <section class="left-section">
+      <img src="assets/Logo.png" alt="">
+      <h1>Festivite</h1>
+      <p>Crie um convite digital para o seu evento</p>
+    </section>
+    <section class="right-section">
+      <div class="container">
+        <h1>Crie seu convite</h1>
+        <form action="">
+
+          <div class="heading">
+            <img src="/assets/calendar.svg" alt="">
+            <h2>Sobre o evento</h2>
+          </div>
+
+          <fieldset>
+            <legend>Título</legend>
+            <input type="text" name="nameofenvent" id="nameOfEnvent" placeholder="Nome do evento" required>
+          </fieldset>
+
+          <div class="inputs-row">
+            <fieldset>
+              <legend>Início</legend>
+              <input type="text" placeholder="DD/MM/AAAA, --:--" class="data-input" onfocus="(this.type='date')" onblur="(this.type='text')">
+            </fieldset>
+            <fieldset>
+              <legend>Fim</legend>
+              <input type="text" placeholder="DD/MM/AAAA, --:--" class="data-input" onfocus="(this.type='date')" onblur="(this.type='text')">
+            </fieldset>
+          </div>
+          <div class="inputs-row">
+            <fieldset class="type">
+              <legend>Tipo</legend>
+              
+              <div class="options-container">
+                <label class="icon-text option-label">
+                  <div class="option">
+                    <input type="radio" name="tipo" value="presencial">
+                      <div class="option-content">
+                        <img src="/assets/building-2.svg" alt="">
+                        Presencial
+                      </div>
+                  </div>
+                </label>
+                <label class="icon-text option-label">
+                  <div class="option">
+                    <input type="radio" name="tipo" value="online">
+                    <div class="option-content">
+                      <img src="/assets/video.svg" alt="">
+                      Online
+                    </div>                      
+                    </label>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Local</legend>
+              <input type="text" name="adressEvent" placeholder="Link ou endereço">
+            </fieldset>
+          </div>
+          <fieldset>
+            <legend>Descrição</legend>
+            <input class="input-xl" type="text" name="adressEvent" placeholder="Escreva sobre os detalhes do evento">
+          </fieldset>
+        </form>
+        <form action="">
+          <div class="heading">
+            <img src="/assets/paintbrush-vertical.svg" alt="">
+            <h2>Personalização</h2>
+          </div>
+          <fieldset>
+            <legend>Cor principal</legend>          
+            <div class="color-container">
+              <div class="color-selection">
+                <span class="color-option brand-light"></span>
+              </div>
+              <div class="color-selection">
+                <div class="color-option brand-mid" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option brand-dark" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option purple" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option fuschi" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option pink" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option orange" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option yellow" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option lime" ></div>
+              </div>
+              <div class="color-selection">
+                <div class="color-option cyan" ></div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Tema do evento</legend>
+            <div class="image-selection">
+              <div class="image-option">
+                <img src="./assets/Image.png" alt="Fest of Brithday">
+                Aniversário
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-1.png" alt="Children fest">
+                Infantil
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-2.png" alt="graduation party">
+                Formatura
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-3.png" alt="wedding party">
+                Casamento
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-4.png" alt="wedding party">
+                Chá de Bebê
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-5.png" alt="wedding party">
+                Chá de Panela
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-6.png" alt="wedding party">
+                Carnaval
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-7.png" alt="wedding party">
+                Páscoa
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-8.png" alt="wedding party">
+                São João
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-9.png" alt="wedding party">
+                Halloween
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-10.png" alt="wedding party">
+                Natal
+              </div>
+              <div class="image-option">
+                <img src="./assets/Image-11.png" alt="wedding party">
+                Outro
+              </div>
+            </div>
+          </fieldset>
+          <div class="inputs-row checkboxContainer">
+            <fieldset>
+              <legend>Estilo</legend>
+              <input type="checkbox" id="darkModeToggle" class="file-input">
+              <label for="darkModeToggle" class="toggle-switch"></label>
+              <span id="toggleLabel" class="toggle-label">Escuro</span>
+              
+            </fieldset>
+            <fieldset class="file-container">
+              <legend>Foto de capa</legend>
+              
+              <label for="fileUpload">
+                <img src="./assets/upload.svg" alt="">
+                Selecionar
+              </label>
+              <input type="file" id="fileUpload" class="file-input">
+              <span class="file-name">Nenhum arquivo selecionado</span>
+            </fieldset>
+          </div>
+        </form>
+        <form action="">
+          <div class="heading">
+            <img src="/assets/contact.svg" alt="">
+            <h2>Dados para contato</h2>
+          </div>
+          <fieldset>
+            <legend>Nome</legend>
+            <input type="text" name="name" id="name" placeholder="Nome completo" required>
+          </fieldset>
+
+          <div class="inputs-row">
+            <fieldset>
+              <legend>E-mail</legend>
+              <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+            </fieldset>
+            <fieldset>
+              <legend>Telefone</legend>
+              <input type="number" name="phone" id="phone" placeholder="(99) 99999-9999">
+            </fieldset>
+          </div>
+          <div class="terms-container">
+            <div class="terms">
+              <label for="">
+                <input type="checkbox" name="Termo" id="">
+                Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>
+              </label>
+              <label for="">
+                <input type="checkbox" name="Termo" id="">
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+              <label for="">
+                <input type="checkbox" name="Termo" id="">
+                Aceito receber atualizações e promoções por SMS
+              </label>
+            </div>
+            <div class="button-container">
+              <button>
+                <img src="/assets/ticket.png" alt="">
+                Gerar convite
+              </button>
+            </div>
+          </div>
+          
+
+        </form>
+      </div>
+    </section>
+</body>
+
+  <script src="./scripts.js"></script>
+</html>
